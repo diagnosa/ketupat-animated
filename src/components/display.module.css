@@ -9,6 +9,7 @@
 }
 
 .announcement {
+  visibility: hidden;
   width: 100%;
   top: 85px;
   padding: 5px 0;
@@ -17,6 +18,21 @@
   background-color: #252422;
   text-align: center;
   color: #fffcf2;
+  animation: fadein;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 600px) {
