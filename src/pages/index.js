@@ -1,14 +1,17 @@
 import React from 'react';
 import Container from '../components/container';
+import Television from '../components/television';
 
 export default function Home() {
     return (
         <Container>
-            <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
+            <h1>Hi! Let's join the adventure of Ketupat around Indonesia!</h1>
             <p>
-                What do I like to do? Lots of course but definitely enjoy
-                building websites.
+                Change the channel to jump into another province
             </p>
+            <Television>
+                <span>ketupat adventure</span>
+            </Television>
         </Container>
     );
 }
