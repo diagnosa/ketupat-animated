@@ -2,8 +2,9 @@ import React from 'react';
 import { string, element } from 'prop-types';
 import { Link } from 'gatsby';
 import containerStyles from './container.module.css';
+import { Helmet } from 'react-helmet';
 
-const ListLink = ({  to, children  }) => (
+const ListLink = ({ to, children }) => (
     <li style={{ display: `inline-block`, marginRight: `1rem` }}>
         <Link to={to}>{children}</Link>
     </li>
@@ -17,6 +18,18 @@ ListLink.propTypes = {
 function Container({ children }) {
     return (
         <div className={containerStyles.container}>
+            <Helmet
+                htmlAttributes={{
+                    lang: 'en',
+                }}
+            >
+                <meta charSet="utf-8" />
+                <title>Ketupat Animated</title>
+                <link
+                    rel="canonical"
+                    href="https://ketupat-animated.netlify.app/"
+                />
+            </Helmet>
             <header style={{ marginBottom: `1.5rem` }}>
                 <Link
                     to="/"
