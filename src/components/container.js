@@ -1,14 +1,20 @@
 import React from 'react';
+import { string, element } from 'prop-types';
 import { Link } from 'gatsby';
 import containerStyles from './container.module.css';
 
-const ListLink = props => (
+const ListLink = ({  to, children  }) => (
     <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-        <Link to={props.to}>{props.children}</Link>
+        <Link to={to}>{children}</Link>
     </li>
 );
 
-export default function Container({ children }) {
+ListLink.propTypes = {
+    to: string,
+    children: element,
+};
+
+function Container({ children }) {
     return (
         <div className={containerStyles.container}>
             <header style={{ marginBottom: `1.5rem` }}>
@@ -28,3 +34,9 @@ export default function Container({ children }) {
         </div>
     );
 }
+
+Container.propTypes = {
+    children: element,
+};
+
+export default Container;

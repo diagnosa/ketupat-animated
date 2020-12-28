@@ -1,9 +1,14 @@
 import React from 'react';
+import { element } from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import televisionStyles from './television.module.css';
 
-export default function Television({ children }) {
+Television.propTypes = {
+    children: element,
+};
+
+function Television({ children }) {
     const data = useStaticQuery(graphql`
         query {
             file(relativePath: { eq: "television.png" }) {
@@ -26,3 +31,5 @@ export default function Television({ children }) {
         </div>
     );
 }
+
+export default Television;

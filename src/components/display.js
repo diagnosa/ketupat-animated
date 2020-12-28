@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import displayStyles from './display.module.css';
 
-export default function Display({ children }) {
+export default function Display(){
     const data = useStaticQuery(graphql`
         query {
             file(relativePath: { eq: "color-bars.jpg" }) {
