@@ -9,7 +9,7 @@ export default function Home() {
             <h1>
                 Hi! Let&#39;s join the adventure of Ketupat around Indonesia!
             </h1>
-            <p>Change the channel to jump into another province</p>
+            <p>Starting from the capital city</p>
             <Television>
                 <Display />
             </Television>
