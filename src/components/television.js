@@ -22,7 +22,11 @@ function Television({ children }) {
     `);
     return (
         <div className={televisionStyles.container}>
-            <div className={televisionStyles.children__wrapper}>{children}</div>
+            <div
+                className={`${televisionStyles.children__wrapper} ${televisionStyles.evening}`}
+            >
+                {children}
+            </div>
             <Img
                 fluid={data.file.childImageSharp.fluid}
                 alt="A Television frame"

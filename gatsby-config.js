@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
     siteMetadata: {
         title: 'Ketupat Animated',
-        description: 'Ketupat aninmated using GatsbyJS',
+        description: 'Ketupat animated using GatsbyJS',
     },
     plugins: [
         {

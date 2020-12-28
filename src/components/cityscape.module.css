@@ -1,0 +1,23 @@
+.container {
+  width: 1500px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0px;
+  animation: slide 10s linear infinite;
+}
+
+.frame {
+  width: 50%;
+  float: left;
+  display: block;
+  border-bottom: 30px solid #1f1300;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -750px;
+  }
+}

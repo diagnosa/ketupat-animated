@@ -1,6 +1,8 @@
 .container {
   box-sizing: border-box;
-  align-items: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
 }
 
 .bars {
@@ -32,6 +34,23 @@
   to {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+.car {
+  position: absolute;
+  bottom: 10px;
+  width: 40%;
+  left: 150px;
+  animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }
 

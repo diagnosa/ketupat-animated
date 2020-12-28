@@ -1,12 +1,13 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import Cityscape from './cityscape';
 import displayStyles from './display.module.css';
 
-export default function Display(){
+export default function Display() {
     const data = useStaticQuery(graphql`
         query {
-            file(relativePath: { eq: "color-bars.jpg" }) {
+            file(relativePath: { eq: "ketupat-car.png" }) {
                 childImageSharp {
                     fluid {
                         ...GatsbyImageSharpFluid
@@ -17,15 +18,13 @@ export default function Display(){
     `);
     return (
         <div className={displayStyles.container}>
+            <Cityscape />
             <Img
-                fluid={{
-                    ...data.file.childImageSharp.fluid,
-                    aspectRatio: 400 / 300,
-                }}
-                alt="Color Bars"
-                className={displayStyles.bars}
+                fluid={data.file.childImageSharp.fluid}
+                alt="Driving Ketupat"
+                className={displayStyles.car}
+                style={{ position: 'absolute' }}
             />
-            <div className={displayStyles.announcement}>Work In Progress</div>
         </div>
     );
 }
