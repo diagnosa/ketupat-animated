@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, element } from 'prop-types';
+import { string, element, arrayOf } from 'prop-types';
 import { Link } from 'gatsby';
 import containerStyles from './container.module.css';
 import { Helmet } from 'react-helmet';
@@ -12,7 +12,7 @@ const ListLink = ({ to, children }) => (
 
 ListLink.propTypes = {
     to: string,
-    children: element,
+    children: arrayOf(element),
 };
 
 function Container({ children }) {
