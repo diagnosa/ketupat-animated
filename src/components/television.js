@@ -7,7 +7,7 @@ import televisionStyles from './television.module.css';
 Television.propTypes = {
     children: element,
 };
-const max = 2;
+const max = 3;
 const min = 1;
 const timeRange = ['morning', 'evening', 'night'];
 
