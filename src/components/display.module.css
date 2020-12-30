@@ -1,8 +1,10 @@
 .container {
   box-sizing: border-box;
-  align-items: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
 }
-  
+
 .bars {
   overflow-y: hidden;
   height: 100%;
@@ -35,9 +37,29 @@
   }
 }
 
+.car {
+  position: absolute;
+  bottom: 10px;
+  width: 40%;
+  left: 150px;
+  animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .announcement {
     top: 55px;
     font-size: 14px;
+  }
+  .car {
+    left: 70px;
   }
 }
