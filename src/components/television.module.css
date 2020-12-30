@@ -43,7 +43,31 @@
 .button__group {
   width: 600px;
   position: absolute;
-  margin-top: 450px;
+  margin-top: 500px;
+}
+
+.button {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #fffff0, #e5e1ca);
+  box-shadow: 7px 7px 13px #9d9b8b, -7px -7px 13px #ffffff;
+  margin: 5px 10px;
+  width: 65px;
+  height: 65px;
+  font-size: 12px;
+  transition: ease-out 0.5s;
+}
+
+.button:active {
+  background: linear-gradient(145deg, #e5e1ca, #fffff0);
+  transition: linear 1s;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  box-shadow: 5px 5px 29px #9d9b8b, -5px -5px 29px #ffffff;
 }
 
 @media only screen and (max-width: 600px) {
@@ -56,5 +80,16 @@
   .container {
     width: 320px;
     margin: 0 auto;
+  }
+  .button__group {
+    margin-top: 275px;
+    width: 300px;
+  }
+  .button {
+    border-radius: 50px;
+    font-size: 11px;
+    width: 55px;
+    height: 55px;
+    margin: 5px;
   }
 }
