@@ -1,0 +1,56 @@
+.sketch {
+  width: 100px;
+  filter: hue-rotate(10px);
+  box-sizing: border-box;
+  margin-left: -40px;
+  top: 150px;
+}
+
+.image__center {
+  width: 300px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.first__paragraph {
+  margin-left: 35px;
+}
+
+.third__paragraph {
+  width: 45%;
+  display: inline-block;
+  text-align: right;
+  margin-right: 5px;
+}
+.last__paragraph {
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .third__paragraph {
+    width: 100%;
+    text-align: left;
+  }
+  .title {
+    word-wrap: normal;
+    margin-bottom: 10px;
+  }
+  .sketch {
+    margin-left: -35px;
+  }
+  .first__paragraph {
+    margin-left: 40px;
+  }
+  .image__center {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .first__paragraph {
+    margin-bottom: 0px;
+    margin-left: 30px;
+  }
+}
