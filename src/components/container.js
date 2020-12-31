@@ -12,7 +12,7 @@ const ListLink = ({ to, children }) => (
 
 ListLink.propTypes = {
     to: string,
-    children: arrayOf(element),
+    children: string,
 };
 
 function Container({ children }) {
@@ -49,7 +49,7 @@ function Container({ children }) {
 }
 
 Container.propTypes = {
-    children: element,
+    children: arrayOf(element),
 };
 
 export default Container;
