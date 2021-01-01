@@ -61,7 +61,7 @@ function Television({ children }) {
                         setTime(shuffleTime());
                     }}
                 >
-                    Prev
+                    prev
                 </button>
                 <button
                     className={televisionStyles.button}
@@ -70,7 +70,7 @@ function Television({ children }) {
                         setTime(shuffleTime());
                     }}
                 >
-                    Shuffle
+                    shuffle
                 </button>
                 <button
                     className={televisionStyles.button}
@@ -79,7 +79,7 @@ function Television({ children }) {
                         setTime(shuffleTime());
                     }}
                 >
-                    Next
+                    next
                 </button>
             </div>
             <Img
