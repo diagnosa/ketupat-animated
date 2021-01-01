@@ -29,6 +29,10 @@ function Container({ children }) {
                     rel="canonical"
                     href="https://ketupat-animated.netlify.app/"
                 />
+                <link
+                    href="https://fonts.googleapis.com/css?family=Blinker"
+                    rel="stylesheet"
+                />
             </Helmet>
             <header style={{ marginBottom: `1.5rem` }}>
                 <Link
